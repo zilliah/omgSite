@@ -1,0 +1,100 @@
+:root {
+    --main-mid-color: #004aad;
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--main-mid-color);
+}
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+img {
+    max-height: 60vh;
+    margin: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p, a {
+    font-size: 2rem;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav {
+    background-color: var(--main-mid-color);
+    padding: 1rem;
+}
+
+li {
+    display: inline;
+    margin: auto 1rem;
+}
+
+a { 
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+span {
+    font-size: 2rem;
+}
+
+section, header, footer {
+    padding: 3rem 5rem;
+}
+
+section:nth-of-type(2n), footer {
+    background-color: var(--main-mid-color);
+    color: white;
+}
+
+#games a {
+    color: var(--main-mid-color);
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
