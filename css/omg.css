@@ -45,18 +45,18 @@ h2 {
     font-size: 3rem;
 }
 
+h3>a {
+    color: var(--main-mid-color);
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
 p, a {
     font-size: 2rem;
 }
 
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-nav {
-    background-color: var(--main-mid-color);
-    padding: 1rem;
-}
 
 li {
     display: inline;
@@ -64,7 +64,7 @@ li {
 }
 
 a { 
-    color: white;
+    color: var(--main-mid-color);
     text-decoration: none;
     font-size: 2rem;
 }
@@ -82,8 +82,18 @@ section:nth-of-type(2n), footer {
     color: white;
 }
 
-#games a {
-    color: var(--main-mid-color);
+section:nth-of-type(2n) a, nav a, footer a {
+    color: white;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav {
+    background-color: var(--main-mid-color);
+    padding: 1rem;
 }
 
 header {
