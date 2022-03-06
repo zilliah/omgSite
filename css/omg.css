@@ -1,8 +1,11 @@
 :root {
-    --main-mid-color: #004aad;
+    --main-color: #004aad;
+    --lt-main: #A9AABC;
+    --lt-alt: #BFA5A5;
+    --alt-color: #A20231;
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--main-mid-color);
+    color: var(--main-color);
 }
 
 /* Box Model Hack */
@@ -46,7 +49,7 @@ h2 {
 }
 
 h3>a {
-    color: var(--main-mid-color);
+    color: var(--main-color);
 }
 
 h3 {
@@ -57,6 +60,10 @@ p, a {
     font-size: 2rem;
 }
 
+p {
+    line-height: 3.5rem;;
+}
+
 
 li {
     display: inline;
@@ -64,8 +71,7 @@ li {
 }
 
 a { 
-    color: var(--main-mid-color);
-    text-decoration: none;
+    color: var(--alt-color);
     font-size: 2rem;
 }
 
@@ -78,7 +84,7 @@ section, header, footer {
 }
 
 section:nth-of-type(2n), footer {
-    background-color: var(--main-mid-color);
+    background-color: var(--main-color);
     color: white;
 }
 
@@ -92,8 +98,12 @@ section:nth-of-type(2n) a, nav a, footer a {
 /* LAYOUT
 /*******************************************/
 nav {
-    background-color: var(--main-mid-color);
+    background-color: var(--main-color);
     padding: 1rem;
+}
+
+nav a, footer a {
+    text-decoration: none;
 }
 
 header {
@@ -110,5 +120,5 @@ footer {
 /*******************************************/
 
 .no-upcoming {
-    display: none;
+    /* display: none; */
 }
