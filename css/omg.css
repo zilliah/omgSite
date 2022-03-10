@@ -1,5 +1,6 @@
 :root {
     --main-color: #004aad;
+    --extra-dark: #002657;
     --lt-main: #A9AABC;
     --lt-alt: #BFA5A5;
     --alt-color: #A20231;
@@ -42,6 +43,10 @@ h1 {
 
 h2 {
     font-size: 3rem;
+}
+
+.image-left h2 {
+    margin-left: 5rem;
 }
 
 h3>a {
@@ -134,7 +139,7 @@ nav li {
     margin: auto 5rem;
 }
 
-.games {
+.games, .content {
     margin: 5rem 3rem 10rem 5rem;
 }
 
@@ -149,7 +154,30 @@ nav li {
 }
 
 
+.content {
+    display: flex;
+    justify-content: space-between;
+}
 
+
+.content div {
+    margin: auto 5rem;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--extra-dark);
+}
+
+footer a {
+    font-size: 1.5rem;
+}
+
+footer span a {
+    font-size: 1.2rem;
+}
 /******************************************
 /* IMAGES
 /*******************************************/
@@ -161,6 +189,16 @@ nav li {
     object-fit: contain;
     border-radius: 3rem;
 }
+
+.image-left img {
+    width: 30%;
+    border-radius: 3rem;
+    margin-left: 0;
+    object-fit: contain;
+
+}
+
+
 
 .past {
     display: flex;
