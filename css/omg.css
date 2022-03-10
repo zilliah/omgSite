@@ -8,24 +8,20 @@
     color: var(--main-color);
 }
 
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 /* Box Model Hack */
 * {
      -moz-box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
 
-.clear {
-	clear: both;
-}
 
 /******************************************
 /* BASE STYLES
@@ -92,10 +88,30 @@ section:nth-of-type(2n) a, nav a, footer a {
     color: white;
 }
 
+button 
+{
+    background-color: var(--alt-color);
+    border: none;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    padding: 2rem;
+    display: block;
+    font-size: 2.2rem;
+}
+
+.time, .location {
+    font-size: 1.6rem;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
 nav {
     background-color: var(--main-color);
     padding: 1rem;
@@ -118,29 +134,45 @@ nav li {
     margin: auto 5rem;
 }
 
-header {
-
+.games {
+    margin: 5rem 3rem 10rem 5rem;
 }
 
-footer {
-
+.games > section {
+    display: flex;
+    padding: 0;
 }
+
+.games span {
+    display: block;
+    margin: 1rem auto;
+}
+
+
 
 /******************************************
 /* IMAGES
 /*******************************************/
+
+.games img {
+    width: 60%;
+    height: auto;
+    margin-left: 7rem;
+    object-fit: contain;
+    border-radius: 3rem;
+}
 
 .past {
     display: flex;
 }
 
 .splash {
-    background-image: linear-gradient(337deg, rgba(0,0,0,0) 0%, rgba(0,74,173,0.9) 60%), 
+    background-image: linear-gradient(315deg, rgba(0,0,0,0) 0%, rgba(0,74,173,0.9) 60%), 
         linear-gradient(0deg, rgba(0,0,0,0) 60%, rgba(0,74,173,1) 100%), 
         url("/img/splash/point-at-map.jpg");
     background-size: cover;
     background-position: bottom;
-    height: 75vh;
+    height: 70vh;
 }
 
 .splash h1 {
@@ -150,12 +182,18 @@ footer {
     font-weight: 100;
     max-width: 30%;
     line-height: 14rem;
+    padding-left:10%;
+}
+
+.splash h1>span {
+    font-size: 14rem;
 }
 
 nav img {
     height: 6.5rem;
     margin: 0;
     margin-top: 1rem;
+    padding-left: 2rem;
 }
 
 /******************************************
@@ -165,3 +203,4 @@ nav img {
 .no-upcoming {
     /* display: none; */
 }
+
