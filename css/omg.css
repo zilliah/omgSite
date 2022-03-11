@@ -45,7 +45,7 @@ h2 {
     font-size: 3rem;
 }
 
-.image-left h2 {
+.what-is h2 {
     margin-left: 5rem;
 }
 
@@ -93,15 +93,14 @@ section:nth-of-type(2n) a, nav a, footer a {
     color: white;
 }
 
-button 
-{
+button, .button {
     background-color: var(--alt-color);
     border: none;
     margin: 2rem;
     border-radius: 1rem;
 }
 
-button a {
+button a, .button {
     color: white;
     text-decoration: none;
     padding: 2rem;
@@ -111,6 +110,11 @@ button a {
 
 .time, .location {
     font-size: 1.6rem;
+}
+
+.mailing-email {
+    font-size: 2rem;
+    color: #A20231;
 }
 
 /******************************************
@@ -139,8 +143,12 @@ nav li {
     margin: auto 5rem;
 }
 
-.games, .content {
+.games, .image-left {
     margin: 5rem 3rem 10rem 5rem;
+}
+
+.games {
+    margin-top: 3rem;
 }
 
 .games > section {
@@ -160,16 +168,27 @@ nav li {
 }
 
 
-.content {
+.image-left, .image-right {
     display: flex;
     justify-content: space-between;
 }
 
 
-.content div {
+.image-left div, .image-right div {
     margin: auto 5rem;
 }
 
+.image-left p, .image-right p {
+    max-width: 40%;
+}
+
+form {
+    display: flex;
+}
+
+article {
+    padding: 5rem 20%;
+}
 
 footer {
     display: flex;
@@ -196,7 +215,7 @@ footer span a {
     border-radius: 3rem;
 }
 
-.image-left img {
+.what-is img {
     width: 30%;
     border-radius: 3rem;
     margin-left: 0;
@@ -231,6 +250,20 @@ footer span a {
 
 .splash h1>span {
     font-size: 14rem;
+}
+
+.about {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,74,173,1) 100%), 
+    url("/img/splash/group-shot.jpg");
+    padding: 5rem;
+}
+
+.about h1 {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    max-width: 100%;
+    margin-top: 0;
+    padding-left: 0;
+    text-align: center;
 }
 
 nav img {
