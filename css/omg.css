@@ -28,9 +28,6 @@ body, html {
 /* BASE STYLES
 /*******************************************/
 
-body {
-
-}
 
 img {
     max-height: 60vh;
@@ -81,15 +78,15 @@ span {
 }
 
 section, header, footer {
-    padding: 3rem 5rem;
+    padding: 3rem 5rem; 
 }
 
-section:nth-of-type(2n), footer {
+body>section:nth-of-type(2n) {
     background-color: var(--main-color);
     color: white;
 }
 
-section:nth-of-type(2n) a, nav a, footer a {
+body>section:nth-of-type(2n) a, nav a, footer a {
     color: white;
 }
 
@@ -134,6 +131,7 @@ nav a, footer a {
 
 nav a:hover, footer a:hover {
     text-decoration: dotted;
+    /* this isn't working, what's up w that TODO */
 }
 
 nav, nav ul {
@@ -144,6 +142,33 @@ nav, nav ul {
 nav li {
     margin: auto 5rem;
 }
+
+form {
+    display: flex;
+}
+
+article {
+    padding: 5rem 20%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--extra-dark);
+    align-items: center;
+}
+
+footer a {
+    font-size: 1.5rem;
+}
+
+footer span a {
+    font-size: 1.2rem;
+}
+
+/******************************************
+/*  PAGE SPECIFIC
+/*******************************************/
 
 .games, .image-left {
     margin: 5rem 3rem 10rem 5rem;
@@ -184,31 +209,6 @@ nav li {
     max-width: 40%;
 }
 
-form {
-    display: flex;
-}
-
-article {
-    padding: 5rem 20%;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--extra-dark);
-}
-
-footer a {
-    font-size: 1.5rem;
-}
-
-footer span a {
-    font-size: 1.2rem;
-}
-/******************************************
-/* IMAGES
-/*******************************************/
-
 .games img {
     width: 60%;
     height: auto;
@@ -236,6 +236,7 @@ footer span a {
     height: 70vh;
     background-attachment: fixed;
 }
+
 .splash h1 {
     color: white;
     font-size: 10rem;
@@ -243,7 +244,6 @@ footer span a {
     font-weight: 100;
     line-height: 14rem;
     padding: 5rem;
-
 }
 
 .home {
@@ -285,13 +285,53 @@ footer span a {
 }
 
 .about h1, .faq h1 {
-    /* font-family: Arial, Helvetica, sans-serif; */
     max-width: 100%;
     margin-top: 0;
     text-align: center;
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+}
+
+.partners a {
+    display: block;
+    width: 40%;
+    text-align:justify;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.partners h3 {
+    text-align: center;
+}
+
+.partners a:hover {
+    box-shadow: rgba(169, 170, 188, 0.7) 0px 50px 100px -20px, rgba(169, 170, 188, 0.8) 0px 30px 60px -30px;
+
+}
+
+.partners.three a {
+    width: 25%;
+}
+
+.partners.three a:hover {
+    box-shadow: rgb(0, 38, 87, 0.7) 0px 50px 100px -20px, rgb(0, 38, 87, 0.8) 0px 30px 60px -30px;
+}
+
+.partners img {
+    width: 100%;
+    /* TODO fiddle with them */
+
+}
+
 
 nav img {
     height: 6.5rem;
