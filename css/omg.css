@@ -327,9 +327,18 @@ footer span a {
 }
 
 .partners img {
-    width: 100%;
-    /* TODO fiddle with them */
+    display: block;
+    margin: auto;
+    text-align: center;
+}
 
+
+.rectangle {
+    width: 100%;
+}
+
+.square {
+    width: 50%;
 }
 
 
