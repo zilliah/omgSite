@@ -125,6 +125,14 @@ nav {
     width: 100%;
 }
 
+nav img {
+    height: 6.5rem;
+    margin: 0;
+    margin-top: 1rem;
+    padding-left: 2rem;
+}
+
+
 nav a, footer a {
     text-decoration: none;
 }
@@ -166,11 +174,15 @@ footer span a {
     font-size: 1.2rem;
 }
 
+
+
 /******************************************
 /*  PAGE SPECIFIC
 /*******************************************/
 
-.games, .image-left {
+/* --------- landing page -------- */
+
+.games, .plain-left {
     margin: 5rem 3rem 10rem 5rem;
 }
 
@@ -195,17 +207,17 @@ footer span a {
 }
 
 
-.image-left, .image-right {
+.plain-left, .plain-right {
     display: flex;
     justify-content: space-between;
 }
 
 
-.image-left div, .image-right div {
+.plain-left div, .plain-right div {
     margin: auto 5rem;
 }
 
-.image-left p, .image-right p {
+.plain-left p, .plain-right p {
     max-width: 40%;
 }
 
@@ -225,9 +237,97 @@ footer span a {
 
 }
 
+/* ------ games ------------- */
+
 .past {
     display: flex;
 }
+
+/*  -------------partners ---------- */
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+}
+
+.partners a {
+    display: block;
+    width: 40%;
+    text-align:justify;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.partner-splash ~ section h2, .partners h3 {
+    text-align: center;
+}
+
+.partners a:hover {
+    box-shadow: rgba(169, 170, 188, 0.7) 0px 50px 100px -20px, rgba(169, 170, 188, 0.8) 0px 30px 60px -30px;
+
+}
+
+.partners.three a {
+    width: 28%;
+    padding: 0;
+}
+
+.partners.three a:hover {
+    box-shadow: rgb(0, 38, 87, 0.7) 0px 50px 100px -20px, rgb(0, 38, 87, 0.8) 0px 30px 60px -30px;
+}
+
+.partners img {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+.rectangle {
+    width: 100%;
+}
+
+.square {
+    width: 50%;
+}
+
+/* -----------FAQ -------------- */
+
+.faq-left, .faq-right {
+    display: flex;
+    justify-content: center;
+}
+
+.faq-right {
+    flex-direction: row-reverse;
+}
+
+.faq-left img, .faq-right img {
+    width: 40%;
+    border-radius: 3rem;
+}
+
+.faq-left>p, .faq-right>p, .faq-right>div {
+    width: 40%;
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.no-upcoming {
+    /* display: none; */
+}
+
+
+/******************************************
+/* PAGE SPLASHES
+/*******************************************/
 
 .splash {
     margin-top: 8rem;
@@ -266,7 +366,7 @@ footer span a {
     padding-left: 2rem;
 }
 
-.about, .faq {
+.about, .faq, .partner-splash, .contact {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -284,76 +384,22 @@ footer span a {
     url("/img/splash/faq.jpg");
 }
 
-.about h1, .faq h1 {
+.partner-splash {
+    background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
+    url("/img/splash/point-at-map.jpg");
+
+}
+
+.contact {
+    background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
+    url("/img/splash/contact.jpg");
+    background-position: center;
+}
+
+.about h1, .faq h1, .partner-splash h1, .contact h1 {
     max-width: 100%;
     margin-top: 0;
     text-align: center;
     padding-bottom: 0;
     margin-bottom: 0;
 }
-
-.partners {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-evenly;
-    padding-bottom: 5rem;
-}
-
-.partners a {
-    display: block;
-    width: 40%;
-    text-align:justify;
-    border-radius: 3rem;
-    text-decoration: none;
-    color: var(--main-color);
-}
-
-.partners h3 {
-    text-align: center;
-}
-
-.partners a:hover {
-    box-shadow: rgba(169, 170, 188, 0.7) 0px 50px 100px -20px, rgba(169, 170, 188, 0.8) 0px 30px 60px -30px;
-
-}
-
-.partners.three a {
-    width: 25%;
-}
-
-.partners.three a:hover {
-    box-shadow: rgb(0, 38, 87, 0.7) 0px 50px 100px -20px, rgb(0, 38, 87, 0.8) 0px 30px 60px -30px;
-}
-
-.partners img {
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-
-
-.rectangle {
-    width: 100%;
-}
-
-.square {
-    width: 50%;
-}
-
-
-nav img {
-    height: 6.5rem;
-    margin: 0;
-    margin-top: 1rem;
-    padding-left: 2rem;
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
-.no-upcoming {
-    /* display: none; */
-}
-
