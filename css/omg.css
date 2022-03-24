@@ -32,6 +32,7 @@ body, html {
 img {
     max-height: 60vh;
     margin: 2rem;
+    border-radius: 3rem;
 }
 
 h1 {
@@ -59,7 +60,7 @@ p, a {
 }
 
 p {
-    line-height: 3.5rem;;
+    line-height: 3.5rem;
 }
 
 
@@ -156,7 +157,7 @@ form {
 }
 
 article {
-    padding: 5rem 20%;
+    padding: 5rem 10%;
 }
 
 footer {
@@ -209,7 +210,8 @@ footer span a {
 
 .plain-left, .plain-right {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -218,7 +220,10 @@ footer span a {
 }
 
 .plain-left p, .plain-right p {
-    max-width: 40%;
+    text-align: justify;
+}
+
+.plain-left img, .plain-right img {
 }
 
 .games img {
@@ -226,14 +231,12 @@ footer span a {
     height: auto;
     margin-left: 7rem;
     object-fit: contain;
-    border-radius: 3rem;
 }
 
 .what-is img {
-    width: 30%;
-    border-radius: 3rem;
+    width: 50%;
     margin-left: 0;
-    object-fit: contain;
+    object-fit: cover;
 
 }
 
@@ -311,7 +314,6 @@ footer span a {
 .faq-left img, .faq-right img {
     width: 50%;
     height: auto;
-    border-radius: 3rem;
     margin: 0;
 }
 
@@ -394,7 +396,8 @@ footer span a {
 .partner-splash {
     background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
     url("/img/splash/point-at-map.jpg");
-
+    background-size: cover;
+    background-position: bottom;
 }
 
 .contact {
