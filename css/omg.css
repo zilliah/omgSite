@@ -299,7 +299,9 @@ footer span a {
 
 .faq-left, .faq-right {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 10%;
 }
 
 .faq-right {
@@ -307,15 +309,20 @@ footer span a {
 }
 
 .faq-left img, .faq-right img {
-    width: 40%;
+    width: 50%;
+    height: auto;
     border-radius: 3rem;
+    margin: 0;
 }
 
-.faq-left>p, .faq-right>p, .faq-right>div {
+.faq-left>p, .faq-right>p, .faq-right>div, .faq-left>div  {
     width: 40%;
-
+    text-align: justify;
 }
 
+.faq ~ section > h2 {
+    margin-left: 10%;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
