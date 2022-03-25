@@ -65,7 +65,7 @@ p {
 
 
 li {
-    display: inline;
+    display: inline-block;
     margin: auto 1rem;
 }
 
@@ -73,6 +73,13 @@ a {
     color: var(--alt-color);
     font-size: 2rem;
 }
+
+a:hover {
+    box-shadow: 0 0 3rem var(--lt-main);
+    border-radius: 50%;
+    background-color: rgb(169, 170, 188, 0.37);
+}
+
 
 span {
     font-size: 2rem;
@@ -126,6 +133,12 @@ nav {
     width: 100%;
 }
 
+nav, nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav img {
     height: 6.5rem;
     margin: 0;
@@ -133,24 +146,27 @@ nav img {
     padding-left: 2rem;
 }
 
+nav ul {
+    /* height: 6.5rem; */
+}
 
 nav a, footer a {
     text-decoration: none;
 }
 
-nav a:hover, footer a:hover {
-    text-decoration: dotted;
-    /* this isn't working, what's up w that TODO */
-}
-
-nav, nav ul {
-    display: flex;
-    justify-content: space-between;
-}
-
 nav li {
-    margin: auto 5rem;
+    padding: 3rem 5rem;
+    margin: 0;
+    box-shadow: 0.8rem 0 0.8rem -0.9rem var(--extra-dark);
+    background-clip: border-box;
 }
+
+nav>a:hover {
+    box-shadow: none;
+    background-color: inherit;
+    border-radius: none;
+}
+
 
 form {
     display: flex;
@@ -262,23 +278,17 @@ footer span a {
     border-radius: 3rem;
     text-decoration: none;
     color: var(--main-color);
+    box-shadow: rgba(169, 170, 188, 0.7) 0px 50px 100px -20px, rgba(169, 170, 188, 0.8) 0px 30px 60px -30px;
 }
 
 .partner-splash ~ section h2, .partners h3 {
     text-align: center;
 }
 
-.partners a:hover {
-    box-shadow: rgba(169, 170, 188, 0.7) 0px 50px 100px -20px, rgba(169, 170, 188, 0.8) 0px 30px 60px -30px;
-
-}
 
 .partners.three a {
     width: 28%;
     padding: 0;
-}
-
-.partners.three a:hover {
     box-shadow: rgb(0, 38, 87, 0.7) 0px 50px 100px -20px, rgb(0, 38, 87, 0.8) 0px 30px 60px -30px;
 }
 
@@ -286,6 +296,7 @@ footer span a {
     display: block;
     margin: auto;
     text-align: center;
+    border-radius: 0;
 }
 
 
