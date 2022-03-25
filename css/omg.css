@@ -69,6 +69,8 @@ li {
     margin: auto 1rem;
 }
 
+
+
 a { 
     color: var(--alt-color);
     font-size: 2rem;
@@ -80,6 +82,36 @@ a:hover {
     background-color: rgb(169, 170, 188, 0.37);
 }
 
+
+button, #mc_embed_signup #mc-embedded-subscribe {
+    height: auto;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    align-self: center;
+    background-color: var(--alt-color);
+    font-size: 2.2rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    transition: none;
+}
+
+button:hover {
+    box-shadow: var(--lt-alt) 0 1rem 3rem, inset 0 0 1rem var(--lt-alt);
+}
+
+#mc_embed_signup #mc-embedded-subscribe {
+    font-size: 1.8rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--lt-main);
+    color: var(--extra-dark);
+}
+
+
+#mc_embed_signup #mc-embedded-subscribe:hover {
+    box-shadow: var(--lt-main) 0 1rem 3rem, inset 0 0 1rem var(--lt-alt);
+
+}
 
 span {
     font-size: 2rem;
@@ -98,20 +130,6 @@ body>section:nth-of-type(2n) a, nav a, footer a {
     color: white;
 }
 
-button, .button {
-    background-color: var(--alt-color);
-    border: none;
-    margin: 2rem;
-    border-radius: 1rem;
-}
-
-button a, .button {
-    color: white;
-    text-decoration: none;
-    padding: 2rem;
-    display: block;
-    font-size: 2.2rem;
-}
 
 .time, .location {
     font-size: 1.6rem;
@@ -171,6 +189,7 @@ nav>a:hover {
 form {
     display: flex;
 }
+
 
 article {
     padding: 5rem 10%;
@@ -340,6 +359,74 @@ footer span a {
     margin-top: 4rem;
 }
 
+/* ----------- Contact ------------ */
+
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+}
+
+.contact-methods>section {
+    width: 60%;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form span {
+    color: var(--alt-color);
+}
+
+label, input, textarea {
+    font-size: 2rem;
+}
+
+label, text {
+    margin: 2rem 0 0.5rem 0;
+}
+
+
+label {
+    width: 40%;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    height: 20vh;
+    width: 100%;
+}
+
+.who {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.socials li {
+    display: block;
+    margin: 1rem 0;
+}
+
+.socials ul {
+    padding-left: 0;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+#mc_embed_signup #mc-embedded-subscribe-form {
+    padding: 0;
+    
+}
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -391,7 +478,7 @@ footer span a {
     padding-left: 2rem;
 }
 
-.about, .faq-splash, .partner-splash, .contact-splash {
+.about, .faq-splash, .partner-splash, .contact-splash, .contact-splash {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -416,13 +503,13 @@ footer span a {
     background-position: bottom;
 }
 
-.contact {
+.contact-splash {
     background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
     url("/img/splash/contact.jpg");
     background-position: center;
-}
+} 
 
-.about h1, .faq-splash h1, .partner-splash h1, .contact h1 {
+.about h1, .faq-splash h1, .partner-splash h1, .contact-splash h1 {
     max-width: 100%;
     margin-top: 0;
     text-align: center;
