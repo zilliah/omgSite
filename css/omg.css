@@ -183,7 +183,7 @@ footer span a {
 
 /* --------- landing page -------- */
 
-.games, .plain-left {
+.games {
     margin: 5rem 3rem 10rem 5rem;
 }
 
@@ -193,6 +193,7 @@ footer span a {
 
 .games > section {
     display: flex;
+    align-items: center;
     padding: 0;
 }
 
@@ -208,38 +209,36 @@ footer span a {
 }
 
 
-.plain-left, .plain-right {
+.plain {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 
-.plain-left div, .plain-right div {
+.plain div {
     margin: auto 5rem;
 }
 
-.plain-left p, .plain-right p {
+.plain p {
     text-align: justify;
+    width: 40%;
 }
 
-.plain-left img, .plain-right img {
-}
 
 .games img {
     width: 60%;
-    height: auto;
     margin-left: 7rem;
-    object-fit: contain;
 }
 
 .what-is img {
     width: 50%;
     margin-left: 0;
-    object-fit: cover;
-
 }
 
+.what-is p {
+    width: 100%;
+}
 /* ------ games ------------- */
 
 .past {
@@ -300,31 +299,33 @@ footer span a {
 
 /* -----------FAQ -------------- */
 
-.faq-left, .faq-right {
+.faq {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 5rem 10%;
 }
 
-.faq-right {
+.faq.right {
     flex-direction: row-reverse;
 }
 
-.faq-left img, .faq-right img {
+.faq img {
     width: 50%;
     height: auto;
     margin: 0;
+    object-fit: cover;
 }
 
-.faq-left>p, .faq-right>p, .faq-right>div, .faq-left>div  {
+.faq>div {
     width: 40%;
     text-align: justify;
 }
 
-.faq ~ section > h2 {
-    margin-left: 10%;
+.faq h2 {
+    margin: 0;
 }
+
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -375,7 +376,7 @@ footer span a {
     padding-left: 2rem;
 }
 
-.about, .faq, .partner-splash, .contact {
+.about, .faq-splash, .partner-splash, .contact-splash {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -388,7 +389,7 @@ footer span a {
 }
 
 
-.faq {
+.faq-splash {
     background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
     url("/img/splash/faq.jpg");
 }
@@ -406,7 +407,7 @@ footer span a {
     background-position: center;
 }
 
-.about h1, .faq h1, .partner-splash h1, .contact h1 {
+.about h1, .faq-splash h1, .partner-splash h1, .contact h1 {
     max-width: 100%;
     margin-top: 0;
     text-align: center;
