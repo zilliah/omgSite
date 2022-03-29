@@ -96,6 +96,12 @@ button, #mc_embed_signup #mc-embedded-subscribe {
     transition: none;
 }
 
+a.buy-tickets {
+    box-shadow: none;
+    background-color: transparent;
+
+}
+
 button:hover {
     box-shadow: var(--lt-alt) 0 1rem 3rem, inset 0 0 1rem var(--lt-alt);
 }
@@ -218,24 +224,6 @@ footer span a {
 
 /* --------- landing page -------- */
 
-.games {
-    margin: 5rem 3rem 10rem 5rem;
-}
-
-.games {
-    margin-top: 3rem;
-}
-
-.games > section {
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-
-.games span {
-    display: block;
-    margin: 1rem auto;
-}
 
 .details {
     display: flex;
@@ -261,11 +249,6 @@ footer span a {
 }
 
 
-.games img {
-    width: 60%;
-    margin-left: 7rem;
-}
-
 .what-is img {
     width: 50%;
     margin-left: 0;
@@ -278,7 +261,66 @@ footer span a {
 
 .past {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0;
 }
+
+.past section {
+    width: 30%;
+    margin: 3rem 5rem;
+    border-radius: 3rem;
+    box-shadow: rgb(0, 38, 87, 0.7) 0px 50px 100px -20px, rgb(0, 38, 87, 0.8) 0px 30px 60px -30px;
+}
+
+.past img {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: contain;
+}
+
+.past span {
+    display: block;
+    font-size: 1.7rem;
+    margin: 1.7rem 0;
+}
+
+.games-splash ~ section h2 {
+    text-align: center;
+}
+
+.upcoming {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.upcoming>*{
+    width: 25%;
+}
+
+.actions {
+    text-align: right;
+}
+
+.actions button {
+    margin: 0;
+}
+
+.upcoming img {
+    width: 40%;
+    height: 100%;
+    margin: 0;
+}
+
+.upcoming span {
+    display: block;
+    margin: 2rem 0;
+}
+
 
 /*  -------------partners ---------- */
 
@@ -449,7 +491,7 @@ textarea {
     background-attachment: fixed;
 }
 
-.splash h1 {
+.splash h1, .splash h2 {
     color: white;
     font-size: 10rem;
     font-family: 'Carter One', cursive;
@@ -478,10 +520,17 @@ textarea {
     padding-left: 2rem;
 }
 
-.about, .faq-splash, .partner-splash, .contact-splash, .contact-splash {
+.about, .faq-splash, .partner-splash, .contact-splash, .contact-splash, .games-splash {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+.games-splash {
+    background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
+    url("/img/games/zombies.jpg");
+    background-size: contain;
+    background-position: top;
 }
 
 .about {
@@ -509,10 +558,30 @@ textarea {
     background-position: center;
 } 
 
-.about h1, .faq-splash h1, .partner-splash h1, .contact-splash h1 {
+.about h1, .faq-splash h1, .partner-splash h1, .contact-splash h1, .games-splash h2 {
     max-width: 100%;
     margin-top: 0;
     text-align: center;
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+.games-splash h1 {
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.games-splash h2 {
+    padding: 0;
+    line-height: normal;
+}
+
+.games-splash {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
