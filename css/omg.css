@@ -155,6 +155,7 @@ nav {
     padding: 1rem;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 nav, nav ul {
@@ -270,33 +271,6 @@ footer span a {
 }
 /* ------ games ------------- */
 
-.past {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: baseline;
-    padding: 0;
-}
-
-.past section {
-    width: 30%;
-    margin: 3rem 5rem;
-    border-radius: 3rem;
-    box-shadow: rgb(0, 38, 87, 0.7) 0px 50px 100px -20px, rgb(0, 38, 87, 0.8) 0px 30px 60px -30px;
-}
-
-.past img {
-    max-width: 100%;
-    height: 100%;
-    margin: 0;
-    object-fit: contain;
-}
-
-.past span {
-    display: block;
-    font-size: 1.7rem;
-    margin: 1.7rem 0;
-}
 
 .games-splash ~ section h2, .home + section h2 {
     text-align: center;
@@ -332,6 +306,39 @@ footer span a {
     margin: 2rem 0;
 }
 
+.teaser img {
+    width: 40%;
+}
+
+
+.past {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0;
+}
+
+.past section {
+    width: 30%;
+    margin: 3rem 5rem;
+    border-radius: 3rem;
+    /* box-shadow: rgb(0, 38, 87, 0.7) 0px 50px 100px -20px, rgb(0, 38, 87, 0.8) 0px 30px 60px -30px; */
+    box-shadow: rgba(169, 170, 188, 0.7) 0px 50px 100px -20px, rgba(169, 170, 188, 0.8) 0px 30px 60px -30px;
+}
+
+.past img {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: contain;
+}
+
+.past span {
+    display: block;
+    font-size: 1.7rem;
+    margin: 1.7rem 0;
+}
 
 
 /*  -------------partners ---------- */
