@@ -123,8 +123,12 @@ span {
     font-size: 2rem;
 }
 
-section, header, footer {
+section {
     padding: 5rem; 
+}
+
+header, footer {
+    padding: 3rem 5rem; 
 }
 
 body>section:nth-of-type(2n) {
@@ -266,6 +270,30 @@ footer span a {
 .what-is p {
     width: 100%;
 }
+
+.no-upcoming {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.no-upcoming>div {
+    width: 40%;
+}
+
+.no-upcoming p {
+    text-align: justify;
+}
+
+.no-upcoming img {
+    height: 100%;
+    width: 25%;
+}
+
+.games-splash ~ .no-upcoming h2 {
+    text-align: left;
+}
+
+
 /* ------ games ------------- */
 
 
@@ -345,8 +373,6 @@ footer span a {
     width: 30%;
     margin: 3rem 5rem;
     border-radius: 3rem;
-    /* box-shadow: rgb(0, 38, 87, 0.7) 0px 50px 100px -20px, rgb(0, 38, 87, 0.8) 0px 30px 60px -30px; */
-    box-shadow: rgba(169, 170, 188, 0.7) 0px 50px 100px -20px, rgba(169, 170, 188, 0.8) 0px 30px 60px -30px;
 }
 
 .past img {
@@ -568,14 +594,6 @@ textarea {
     justify-content: center;
 }
 
-/* ======== Update photo URL for games.html splash header here  */
-.games-splash {
-    background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
-    url("/img/games/no-games-splash.jpg");
-    background-size: contain;
-    background-position: top;
-}
-
 .about {
     background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
     url("/img/splash/group-shot-ed.jpg");
@@ -631,13 +649,23 @@ textarea {
 
 
 /******************************************
-/* Change game/no game visibility
+/* GAME UPDATES
 /*******************************************/
 
-/* upcoming game on the landing and games pages */
+/* splash image on games page  */
+/* change the URL string */
+.games-splash {
+    background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
+    url("/img/games/no-games-splash.jpg");
+    background-size: contain;
+    background-position: top;
+}
+
+/* "upcoming game" section on the landing and games pages */
 .new-game {
     display: none;
 }
+
 
 /* teaser game on the games page */
 .teaser {
@@ -647,4 +675,12 @@ textarea {
 /* "no games" message */
 .no-upcoming {
     display: auto;
+}
+
+/* shadows on past games may need to swap colours */
+/* depending which sections are visible */
+/*  just change the order of the shadows listed here */
+.past section {
+    box-shadow: rgba(169, 170, 188, 0.7) 0px 50px 100px -20px, rgba(169, 170, 188, 0.8) 0px 30px 60px -30px;
+    box-shadow: rgb(0, 38, 87, 0.7) 0px 50px 100px -20px, rgb(0, 38, 87, 0.8) 0px 30px 60px -30px;
 }
