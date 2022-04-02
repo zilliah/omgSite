@@ -85,6 +85,7 @@ a:hover {
 
 button, #mc_embed_signup #mc-embedded-subscribe {
     height: auto;
+    width: fit-content;
     margin-top: 1rem;
     padding: 1rem 2rem;
     align-self: center;
@@ -271,35 +272,9 @@ footer span a {
     width: 100%;
 }
 
-.no-upcoming {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.no-upcoming>div {
-    width: 40%;
-}
-
-.no-upcoming p {
-    text-align: justify;
-}
-
-.no-upcoming img {
-    height: 100%;
-    width: 25%;
-}
-
-.games-splash ~ .no-upcoming h2 {
-    text-align: left;
-}
-
 
 /* ------ games ------------- */
 
-
-.games-splash ~ section h2, .home + section h2 {
-    text-align: center;
-}
 
 .upcoming {
     display: flex;
@@ -331,35 +306,47 @@ footer span a {
     margin: 2rem 0;
 }
 
-.teaser p {
-    width: 80%;
-    margin-left: 20%;
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.both {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.teaser img {
-    width: 30%;
-    height: 100%
+.both img {
+    height: 100%;
+    width: 35%;
 }
 
-.teaser h2 {
-    text-decoration: underline;
+.both > div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.both p {
+    text-align: justify;
+}
+
+.both h2 {
+    text-align: left;
     font-size: 2.5rem;
+    text-align: left;
+    margin-top: 3rem;
 }
 
-.teaser h3 {
-    text-align: center;
+h2.teaser {
+    text-decoration: underline;
+}
+
+h3.teaser {
+    text-align: left;
     font-size: 4rem;
     margin-top: 3rem;
-    margin-bottom: 0;
 }
 
-.teaser #mc_embed_signup {
-    margin-left: 20%;
-}
 
-.teaser form div {
-    margin-left: 0;
-}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .past {
     display: flex;
@@ -367,6 +354,10 @@ footer span a {
     justify-content: space-evenly;
     align-items: baseline;
     padding: 0;
+}
+
+.both + section h2 {
+    text-align: center;
 }
 
 .past section {
@@ -538,14 +529,6 @@ textarea {
     
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
-.no-upcoming {
-    /* display: none; */
-}
-
 
 /******************************************
 /* PAGE SPLASHES
@@ -666,7 +649,6 @@ textarea {
     display: none;
 }
 
-
 /* teaser game on the games page */
 .teaser {
     display: none;
@@ -674,7 +656,7 @@ textarea {
 
 /* "no games" message */
 .no-upcoming {
-    display: auto;
+    display: inherit;
 }
 
 /* shadows on past games may need to swap colours */
