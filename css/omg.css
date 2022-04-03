@@ -36,7 +36,11 @@ img {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 10rem;
+}
+
+h1 span {
+    font-size: 10rem;
 }
 
 h2 {
@@ -275,6 +279,9 @@ footer span a {
 
 /* ------ games ------------- */
 
+.new-game h2 {
+    text-align: center;
+}
 
 .upcoming {
     display: flex;
@@ -305,8 +312,6 @@ footer span a {
     display: block;
     margin: 2rem 0;
 }
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .both {
     display: flex;
@@ -344,9 +349,6 @@ h3.teaser {
     font-size: 4rem;
     margin-top: 3rem;
 }
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .past {
     display: flex;
@@ -544,7 +546,6 @@ textarea {
 
 .splash h1, .splash h2 {
     color: white;
-    font-size: 10rem;
     font-family: 'Carter One', cursive;
     font-weight: 100;
     line-height: 14rem;
@@ -622,6 +623,7 @@ textarea {
 .games-splash h2 {
     padding: 0;
     line-height: normal;
+    font-size: 10rem;
 }
 
 .games-splash {
@@ -629,6 +631,36 @@ textarea {
     justify-content: flex-end;
     align-items: center;
 }
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+.short-title {
+    display: none;
+}
+
+@media screen and (max-width: 1564px) {
+    .short-title {
+        display: inline;
+    }
+    .long-title {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /******************************************
@@ -640,8 +672,8 @@ textarea {
 .games-splash {
     background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
     url("/img/games/no-games-splash.jpg");
-    background-size: contain;
-    background-position: top;
+    background-size: cover;
+    background-position: bottom;
 }
 
 /* "upcoming game" section on the landing and games pages */
