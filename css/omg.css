@@ -313,31 +313,37 @@ footer span a {
     margin: 2rem 0;
 }
 
-.both {
+
+.both, .landing {
     display: flex;
     justify-content: space-evenly;
 }
 
-.both img {
+.both img, .landing img {
     height: 100%;
     width: 35%;
 }
 
-.both > div {
+.both > div, .landing > div {
     width: 40%;
     display: flex;
     flex-direction: column;
 }
 
-.both p {
+.both p, .landing p {
     text-align: justify;
 }
 
-.both h2 {
+.both h2, .landing h2{
     text-align: left;
     font-size: 2.5rem;
     text-align: left;
     margin-top: 3rem;
+}
+
+.no-upcoming h2 {
+    text-align: center;
+    margin-top: -2rem;
 }
 
 h2.teaser {
@@ -366,6 +372,7 @@ h3.teaser {
     width: 30%;
     margin: 3rem 5rem;
     border-radius: 3rem;
+    box-shadow: rgba(169, 170, 188, 0.7) 0px 50px 100px -20px, rgba(169, 170, 188, 0.8) 0px 30px 60px -30px;
 }
 
 .past img {
@@ -641,6 +648,10 @@ textarea {
     display: none;
 }
 
+i.fa-dungeon {
+    display: none;
+}
+
 @media screen and (max-width: 1564px) {
     .short-title {
         display: inline;
@@ -648,9 +659,59 @@ textarea {
     .long-title {
         display: none;
     }
+
+    .both {
+        align-items: center;
+    }
 }
 
+@media screen and (max-width: 1360px) {
+    .partners.three a{
+        width: 40%;
+    }
+    
+    .partners.three a:last-of-type {
+        margin-top: 7rem;
+    }
 
+    .about + section article {
+        padding: 0;
+    }
+
+    .about + section .plain img {
+        width: 35%;
+    }
+    
+
+    .upcoming {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .landing {
+        align-items: center;
+    }
+
+    .new-game img {
+        order: 2;
+        width: 80%;
+        margin-top: 5rem;
+    }
+
+    i.fa-dungeon {
+        font-size: 5rem;
+        display: block;
+        text-align: center;
+    }
+
+    img.left-side {
+        object-position: 25%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+}
 
 
 
@@ -689,12 +750,4 @@ textarea {
 /* "no games" message */
 .no-upcoming {
     display: inherit;
-}
-
-/* shadows on past games may need to swap colours */
-/* depending which sections are visible */
-/*  just change the order of the shadows listed here */
-.past section {
-    box-shadow: rgba(169, 170, 188, 0.7) 0px 50px 100px -20px, rgba(169, 170, 188, 0.8) 0px 30px 60px -30px;
-    box-shadow: rgb(0, 38, 87, 0.7) 0px 50px 100px -20px, rgb(0, 38, 87, 0.8) 0px 30px 60px -30px;
 }
