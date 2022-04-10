@@ -761,7 +761,7 @@ textarea {
 
     /* input#menu:checked ~ ul,  */
     
-    input#menu:hover ~ ul, nav ul:hover {
+    input#menu:hover ~ ul, nav ul:hover, input#menu:active ~ ul, nav ul:active {
         display: flex;
         flex-direction: column;
         position: fixed;
