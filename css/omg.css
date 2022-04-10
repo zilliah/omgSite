@@ -747,21 +747,15 @@ textarea {
     
     i.fa-bars {
         display: inline;
-        font-size: 2.8rem;
-        color: white;
-    }
-    
-    label[for="menu"] {
-        width: 5rem;
-        text-align: center;
         margin:0;
         padding:2rem;
+        width: 5rem;
+        color: white;
+        font-size: 2.8rem;
+        text-align: center;
     }
 
-
-    /* input#menu:checked ~ ul,  */
-    
-    input#menu:hover ~ ul, nav ul:hover, input#menu:active ~ ul, nav ul:active {
+    nav i:hover ~ ul, nav ul:hover, nav i:active ~ ul, nav ul:active {
         display: flex;
         flex-direction: column;
         position: fixed;
