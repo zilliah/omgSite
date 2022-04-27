@@ -868,9 +868,48 @@ textarea {
 
 }
 
+@media screen and (max-width: 800px) {
+    .games-splash h2 {
+        font-size: 8rem;
+        line-height: 10.5rem;
+        padding-top: 1.5rem;
+    }
+}
 
 @media screen and (max-width: 686px) {
-    
+
+    .splash h1 {
+        line-height: 10rem;
+    }
+
+    .games-splash h1 {
+        line-height: normal;
+        font-size: 3rem;
+    }
+
+    .games-splash h2 {
+        font-size: 5.3rem;
+        line-height: 8rem;
+    }
+
+    h1 span, .offset-title {
+        font-size: 8rem;
+    }
+
+    .big-title {
+        font-size: 11rem;
+    }
+
+    .home h1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .splash.home {
+        display: flex;
+        align-items: center;
+    }
+
     section, .what-is {
         padding: 4rem 2rem;
     }
@@ -885,7 +924,20 @@ textarea {
 
     .upcoming .actions, .upcoming img + div {
         text-align: left;
-        width: 80%;
+        width: 90%;
+    }
+
+    .new-game h2 {
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    section.new-game {
+        padding: 0;
+    }
+
+    .games-splash + section.new-game {
+        padding: 4rem 2rem;
     }
     
     .upcoming img + div {
@@ -896,7 +948,7 @@ textarea {
         margin: 2rem 0;
     }
 
-    .what-is h2 {
+   .what-is h2 {
         margin-left: 1rem;
     }
     
@@ -946,6 +998,21 @@ textarea {
     footer span a {
         display: none;
     }
+
+    .home {
+        background-image: linear-gradient(270deg, rgba(0,0,0,0) 40%, rgba(0,74,173,1) 95%, rgba(0,74,173,1) 100%), 
+        url("/img/splash/mobile/spaceships-ed-sm.JPG");
+    }
+
+    .partner-splash {
+        background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
+        url("/img/splash/mobile/point-at-map-sm.jpg");
+    }
+
+    .faq-splash {
+        background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
+        url("/img/splash/mobile/faq-sm.jpg");
+    }
 }
 
 @media screen and (max-width: 533px) {
@@ -955,7 +1022,19 @@ textarea {
 }
 
 
-@media screen and (max-width: 439px) {
+@media screen and (max-width: 450px) {
+    .contact-splash {
+        background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
+        url("/img/splash//mobile/contact-sm.jpg");
+    }
+
+    .about-splash {
+        background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
+        url("/img/splash/mobile/group-shot-ed-sm.jpg");
+    }
+    
+    
+    
     footer li span {
         display: none;
     }
@@ -969,7 +1048,7 @@ textarea {
 /*******************************************/
 
 /* splash image on games page  */
-/* change the URL string in BOTH queries */
+/* change the URL string in ALL queries */
 .games-splash {
     background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
     url("/img/games/no-games-splash.jpg");
@@ -981,6 +1060,13 @@ textarea {
     .games-splash {
         background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 25%, rgba(0,0,0,0) 75%), 
         url("/img/games/no-games-splash.jpg");
+    }
+}
+
+@media screen and (max-width: 686px) {
+    .games-splash {
+        background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 25%, rgba(0,0,0,0) 75%), 
+        url("/img/games/no-games-splash-sm.jpg");
     }
 }
 
