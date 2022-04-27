@@ -870,6 +870,54 @@ textarea {
 
 
 @media screen and (max-width: 686px) {
+    
+    section, .what-is {
+        padding: 4rem 2rem;
+    }
+    
+    .what-is .plain div {
+        margin-bottom: 0;
+    }
+    
+    .upcoming {
+        flex-direction: column;
+    }
+
+    .upcoming .actions, .upcoming img + div {
+        text-align: left;
+        width: 80%;
+    }
+    
+    .upcoming img + div {
+        order: 2;
+    }
+
+    .upcoming img {
+        margin: 2rem 0;
+    }
+
+    .what-is h2 {
+        margin-left: 1rem;
+    }
+    
+    .plain div, .what-is .plain div, .faq>div, .plain p {
+        margin: 1rem;
+    }
+
+    .faq img, .what-is img, .about img {
+        max-width: 100%;
+        margin: 1rem;
+    }
+
+    .about img {
+        width: 92%;
+        margin: 2rem 1rem;
+    }
+
+    .about div.plain {
+        align-items: flex-start;
+    }
+    
     .contact-other {
         flex-direction: column;
     }
@@ -880,6 +928,11 @@ textarea {
     
     label {
         width: 100%;
+    }
+
+    .contact-methods input {
+        width: 100%;
+        box-sizing: border-box;
     }
     
     footer {
