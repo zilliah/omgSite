@@ -60,21 +60,15 @@ h3 {
     font-size: 2.5rem;
 }
 
-p, a {
-    font-size: 2rem;
-}
-
 p {
+    font-size: 2rem;
     line-height: 3.5rem;
 }
-
 
 li {
     display: inline-block;
     margin: auto 1rem;
 }
-
-
 
 a { 
     color: var(--alt-color);
@@ -922,7 +916,7 @@ textarea {
         flex-direction: column;
     }
 
-    .upcoming .actions, .upcoming img + div {
+    .upcoming .actions, .upcoming img + div, .both p {
         text-align: left;
         width: 90%;
     }
@@ -1023,6 +1017,10 @@ textarea {
 
 
 @media screen and (max-width: 450px) {
+
+
+
+
     .contact-splash {
         background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
         url("/img/splash//mobile/contact-sm.jpg");
@@ -1032,8 +1030,43 @@ textarea {
         background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
         url("/img/splash/mobile/group-shot-ed-sm.jpg");
     }
+
+    h1 {
+        line-height: 5rem;
+    }
+
+    h1 span, .offset-title {
+        font-size: 5.3rem;
+    }
+
+    .big-title {
+        font-size: 8rem;
+    }
+
+    h2, h3.teaser {
+        font-size: 2.3rem;
+    }
+
+    h3, h2.teaser {
+        font-size: 2rem;
+    }
+
+    h3.teaser, h2.teaser {
+        margin: 1rem 0;
+    }
     
-    
+    p, a {
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+    }
+
+    .both > div {
+        width: 90%;
+    }
+
+    .partner-splash + section, .both + section {
+        padding: 0;
+    }
     
     footer li span {
         display: none;
