@@ -710,9 +710,18 @@ textarea {
         text-align: left;
     }
 
+    .no-upcoming {
+        padding: 0;
+    }
+
+    .no-upcoming h2 {
+        padding-top: 5rem;
+    }
 }
 
 @media screen and (max-width: 990px) {
+
+
     .contact-methods {
         flex-direction: column;
         justify-content: center;
@@ -823,13 +832,13 @@ textarea {
         /* display: none; */
     }
     
-    .about .right > img, .both img, i.fa-dice {
+    .about .right > img, .both img, i.fa-dice, .no-upcoming img {
         display: none;
     }
     
-    .both > div {
+    .both > div, .landing > div {
         width: 80%;
-        margin-bottom: 3rem;;
+        margin-bottom: 3rem;
     }
 
     .partners {
@@ -904,9 +913,10 @@ textarea {
         align-items: center;
     }
 
-    section, .what-is {
+    section, .what-is{
         padding: 4rem 2rem;
     }
+
     
     .what-is .plain div {
         margin-bottom: 0;
@@ -916,7 +926,7 @@ textarea {
         flex-direction: column;
     }
 
-    .upcoming .actions, .upcoming img + div, .both p {
+    .upcoming .actions, .upcoming img + div, .both p, .no-upcoming p {
         text-align: left;
         width: 90%;
     }
@@ -930,6 +940,10 @@ textarea {
         padding: 0;
     }
 
+    section.no-upcoming {
+        padding: 0 2rem;
+    }
+
     .games-splash + section.new-game {
         padding: 4rem 2rem;
     }
@@ -940,6 +954,10 @@ textarea {
 
     .upcoming img {
         margin: 2rem 0;
+    }
+
+    .landing div {
+        width: inherit;
     }
 
    .what-is h2 {
@@ -1013,14 +1031,15 @@ textarea {
     .contact-methods {
         padding: 0;
     }
+
+    .no-upcoming h2 {
+        text-align: left;
+        margin-left: 10%;
+    }
+
 }
 
-
 @media screen and (max-width: 450px) {
-
-
-
-
     .contact-splash {
         background-image: linear-gradient(0deg, rgba(0,74,173,1) 0%, rgba(0,74,173,1) 20%, rgba(0,0,0,0) 50%), 
         url("/img/splash//mobile/contact-sm.jpg");
@@ -1073,9 +1092,6 @@ textarea {
     }
 }
 
-
-
-
 /******************************************
 /* GAME UPDATES
 /*******************************************/
@@ -1105,15 +1121,15 @@ textarea {
 
 /* "upcoming game" section on the landing and games pages */
 .new-game {
-    display: inherit;
+    display: none;
 }
 
 /* teaser game on the games page */
 .teaser {
-    display: inherit;
+    display: none;
 }
 
 /* "no games" message */
 .no-upcoming {
-    display: none;
+    display: inherit;
 }
