@@ -10,9 +10,3 @@ See it live at https://ottawamegagames.ca
 
 A six-page website written only in HTML and CSS.
 
-
-## TIL
-
-This was my first client project - the main takeaways from this project were social: how to best manage client communication and feedback, and how to implement their ideas in a way that will work effectively on a website.
-
-I realised the importance of structuring HTML in a way that will make writing CSS easier (without having to add extra divs afterwards). I also learned to think about which layouts can be reused on multiple pages ahead of time, instead of halfway through writing the CSS for the page. 
