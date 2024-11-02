@@ -1121,15 +1121,15 @@ textarea {
 
 /* "upcoming game" section on the landing and games pages */
 .new-game {
+    display: inherit;
+}
+
+/* "no games" message */
+.no-upcoming {
     display: none;
 }
 
 /* teaser game on the games page */
 .teaser {
     display: none;
-}
-
-/* "no games" message */
-.no-upcoming {
-    display: inherit;
 }
